@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Qurious Growth &mdash; The Podcast Growth Engine</title>
+<meta name="description" content="End-to-end podcast management for fintech, retail, VC and capital markets brands. Guest booking, research, production and distribution.">
+<meta property="og:title" content="Qurious Growth &mdash; The Podcast Growth Engine">
+<meta property="og:description" content="End-to-end podcast management for fintech, retail, VC and capital markets brands. Guest booking, research, production and distribution.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Qurious Growth">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body data-page="home">
+<header class="nav">
+  <a href="index.html" class="brand" aria-label="Qurious Growth home">
+    <svg viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <rect width="38" height="38" rx="10" fill="#0E0E11"/>
+      <rect x=".5" y=".5" width="37" height="37" rx="9.5" stroke="#1D1D23"/>
+      <text x="19" y="26" text-anchor="middle" font-family="Manrope, sans-serif" font-weight="700" font-size="19" fill="#F0EEE9">Q</text>
+      <circle cx="28.5" cy="28.5" r="3.2" fill="#C6A667"/>
+    </svg>
+    <span>Qurious Growth</span>
+  </a>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="index.html#results">Results</a></li>
+      <li><a href="index.html#shorts">Short-Form</a></li>
+      <li><a href="case-studies.html">Case Studies</a></li>
+      <li><a href="index.html#faq">FAQ</a></li>
+    </ul>
+  </nav>
+  <a href="contact.html" class="nav-cta">Book a Call</a>
+  <button class="burger" id="burger" onclick="toggleMenu()" aria-label="Open menu"><span></span><span></span><span></span></button>
+</header>
+
+<div class="mobile" id="mobile">
+  <a href="index.html#services" onclick="closeMenu()">Services</a>
+  <a href="index.html#results" onclick="closeMenu()">Results</a>
+  <a href="index.html#shorts" onclick="closeMenu()">Short-Form</a>
+  <a href="case-studies.html" onclick="closeMenu()">Case Studies</a>
+  <a href="index.html#faq" onclick="closeMenu()">FAQ</a>
+  <a href="contact.html" class="m-cta" onclick="closeMenu()">Book a Call &rarr;</a>
+</div>
+
+<section class="hero">
+  <div class="wrap">
+    <h1 class="h-xl">
+      <span class="line"><span>The Podcast</span></span>
+      <span class="line"><span><span class="it">Growth</span> Engine</span></span>
+    </h1>
+    <p class="hero-sub">The content arm for fintech, retail, VC and capital markets brands. Guest booking, research, production and distribution, handled end to end.</p>
+    <div class="hero-cta">
+      <a href="contact.html" class="btn btn-solid">Book a Call <span class="arr">&rarr;</span></a>
+      <a href="#services" class="btn btn-line">What we do</a>
+    </div>
+    <div class="hero-rule"></div>
+  </div>
+</section>
+
+<div class="trust">
+  <span class="kicker">CEOs, founders and top executives booked from</span>
+  <div class="mq"><div class="mq-track" data-loop><div class="mq-logo"><img src="https://logo.clearbit.com/clear.bank" alt="ClearBank" data-domain="clear.bank" loading="lazy" onerror="logoFallback(this)"><span class="mq-name">ClearBank</span></div><div class="mq-logo"><img src="https://logo.clearbit.com/atombank.co.uk" alt="Atom Bank" data-domain="atombank.co.uk" loading="lazy" onerror="logoFallback(this)"><span class="mq-name">Atom Bank</span></div><div class="mq-logo"><img src="https://logo.clearbit.com/allica.bank" alt="Allica Bank" data-domain="allica.bank" loading="lazy" onerror="logoFallback(this)"><span class="mq-name">Allica Bank</span></div><div class="mq-logo"><img src="https://logo.clearbit.com/revolut.com" alt="Revolut" data-domain="revolut.com" loading="lazy" onerror="logoFallback(this)"><span class="mq-name">Revolut</span></div><div class="mq-logo"><img src="https://logo.clearbit.com/payabl.com" alt="payabl." data-domain="payabl.com" loading="lazy" onerror="logoFallback(this)"><span class="mq-name">payabl.</span></div><div class="mq-logo"><img src="https://logo.clearbit.com/coinbase.com" alt="Coinbase" data-domain="coinbase.com" loading="lazy" onerror="logoFallback(this)"><span class="mq-name">Coinbase</span></div><div class="mq-logo"><img src="https://logo.clearbit.com/blockchain.com" alt="Blockchain.com" data-domain="blockchain.com" loading="lazy" onerror="logoFallback(this)"><span class="mq-name">Blockchain.com</span></div><div class="mq-logo"><img src="https://logo.clearbit.com/cohencircle.com" alt="Cohen Circle" data-domain="cohencircle.com" loading="lazy" onerror="logoFallback(this)"><span class="mq-name">Cohen Circle</span></div><div class="mq-logo"><img src="https://logo.clearbit.com/seedcamp.com" alt="Seedcamp" data-domain="seedcamp.com" loading="lazy" onerror="logoFallback(this)"><span class="mq-name">Seedcamp</span></div><div class="mq-logo"><img src="https://logo.clearbit.com/dlocal.com" alt="dLocal" data-domain="dlocal.com" loading="lazy" onerror="logoFallback(this)"><span class="mq-name">dLocal</span></div></div></div>
+  <div class="mq mq-rev" style="margin-top:.2rem"><div class="mq-track" data-loop>
+    <span class="mq-word">Work in Fintech <i>&#9670;</i> Capital Markets FinTech Forum <i>&#9670;</i> YouTube <i>&#9670;</i> Spotify <i>&#9670;</i> Apple Podcasts <i>&#9670;</i> LinkedIn <i>&#9670;</i> Instagram <i>&#9670;</i> X <i>&#9670;</i></span>
+  </div></div>
+</div>
+
+<section class="no-top" id="work">
+  <div class="wrap rv">
+    <div class="reel-frame">
+      <iframe src="https://www.youtube-nocookie.com/embed/c5edPuWVTxc?rel=0&amp;modestbranding=1&amp;playsinline=1" title="Qurious Growth showreel" allowfullscreen loading="lazy"></iframe>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="tight-top">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div>
+        <span class="kicker">Services</span>
+        <h2 class="h-lg" style="margin-top:.9rem">What <span class="it">we</span> do</h2>
+      </div>
+      <p class="lede">Three pillars. Everything a show needs between the first outreach email and the last reel.</p>
+    </div>
+    <article class="svc rv">
+      <div>
+        <span class="svc-n">01</span>
+        <h3 class="h-md">The <span class="it">Guest</span> Engine</h3>
+        <p>World-class guests, booked for you. Curated lists, personal outreach, structured follow-ups, and deep pre-call research so every conversation feels tailor-made for your listener.</p>
+        <span class="svc-more" onclick="toggleSvc(this)" role="button" tabindex="0">Everything included <span class="arr">&rarr;</span></span>
+        <div class="svc-detail"><ul><li>Curated guest list aligned with your niche, plus a dream list of aspirational names</li><li>Personally crafted outreach for each guest, no mass templates and no spam</li><li>Structured follow-ups that convert interest into confirmed recording dates</li><li>Strategic use of your existing network to surface hidden, credible guests</li><li>Deep-dive research: their journey, ideas, controversies, and what they've never been asked</li><li>Pre-call briefs so you walk into every recording confident and ready</li></ul></div>
+      </div>
+      <div class="svc-media">
+        <iframe src="https://www.youtube-nocookie.com/embed/kU9f_yOfjCk?rel=0&amp;modestbranding=1&amp;playsinline=1" title="Revolut episode trailer" allowfullscreen loading="lazy"></iframe>
+      </div>
+    </article>
+    <article class="svc rv">
+      <div>
+        <span class="svc-n">02</span>
+        <h3 class="h-md"><span class="it">Broadcast</span>-grade production</h3>
+        <p>Editing, trailers, thumbnails, and titles that make every episode sound and look as sharp as the ideas inside it, engineered to earn the click and the listen.</p>
+        <span class="svc-more" onclick="toggleSvc(this)" role="button" tabindex="0">Everything included <span class="arr">&rarr;</span></span>
+        <div class="svc-detail"><ul><li>Full episode editing: silence removal, filler cuts, audio levelling, music, transitions</li><li>A punchy trailer opens each episode and doubles as standalone promo content</li><li>Dynamic captions, b-roll suggestions, and visual formatting for video versions</li><li>High-converting custom thumbnails, platform-optimised for each episode</li><li>Title engineering with curiosity gaps, specificity, and power words</li><li>Systematic A/B testing of thumbnails and titles, refined episode by episode</li></ul></div>
+      </div>
+      <div class="svc-media">
+        <iframe src="https://www.youtube-nocookie.com/embed/IGSchA7dMzc?rel=0&amp;modestbranding=1&amp;playsinline=1" title="Broadcast-grade production sample" allowfullscreen loading="lazy"></iframe>
+      </div>
+    </article>
+    <article class="svc rv">
+      <div>
+        <span class="svc-n">03</span>
+        <h3 class="h-md">Distribution <span class="it">everywhere</span></h3>
+        <p>One recording becomes a month of platform-native content: full episodes, reels, carousels, threads, newsletters, guest kits, and ghost-written posts that compound your reach.</p>
+        <span class="svc-more" onclick="toggleSvc(this)" role="button" tabindex="0">Everything included <span class="arr">&rarr;</span></span>
+        <div class="svc-detail"><ul><li>Full episodes on YouTube, Spotify, and Apple Podcasts, formatted, tagged, optimised</li><li>Hook-first vertical reels and Shorts for Instagram and YouTube</li><li>Insight-rich LinkedIn carousels and X threads that drive saves and shares</li><li>Newsletter write-ups that deepen audience loyalty</li><li>Ready-to-post guest social media kits the moment each episode goes live</li><li>Ghost-written posts in your voice that build the brand elite guests say yes to</li></ul></div>
+      </div>
+      <div class="svc-media">
+        <iframe src="https://www.youtube-nocookie.com/embed/lJRLcP_HyOY?rel=0&amp;modestbranding=1&amp;playsinline=1" title="Multi-platform distribution sample" allowfullscreen loading="lazy"></iframe>
+      </div>
+    </article>
+  </div>
+</section>
+
+<div class="stats">
+  <div class="stats-grid wrap">
+    <div class="stat"><b><span data-count="600">0</span>K+</b><small>Impressions Generated</small></div>
+    <div class="stat"><b><span data-count="110">0</span>K+</b><small>YouTube Views</small></div>
+    <div class="stat"><b><span data-count="50">0</span>+</b><small>Episodes Produced</small></div>
+    <div class="stat"><b><span data-count="30">0</span>+</b><small>High-Profile Guests</small></div>
+  </div>
+</div>
+
+<section id="results">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div>
+        <span class="kicker">Numbers don't lie</span>
+        <h2 class="h-lg" style="margin-top:.9rem">Results <span class="it">we</span> got</h2>
+        <p class="lede" style="margin-top:.8rem">Real screenshots. Real numbers. No fluff.</p>
+      </div>
+      <a href="contact.html" class="btn btn-solid">Get these results <span class="arr">&rarr;</span></a>
+    </div>
+    <div class="shots rv">
+      <figure class="shot" onclick="lbOpen(this)"><img src="assets/img/starling-post.jpg" alt="LinkedIn post about Starling Bank founder Anne Boden with 700 reactions and 20 comments" loading="lazy"><figcaption>LinkedIn · Starling founder story · 700 reactions · 10 reposts</figcaption></figure>
+      <figure class="shot" onclick="lbOpen(this)"><img src="assets/img/yt-28d.png" alt="YouTube channel 13,832 views in 28 days, 7.8K more than usual" loading="lazy"><figcaption>YouTube · 13.8K views in 28 days (+203% vs prev period)</figcaption></figure>
+      <figure class="shot" onclick="lbOpen(this)"><img src="assets/img/li-impressions-mar.png" alt="LinkedIn impressions 58,829, 2,906% growth" loading="lazy"><figcaption>LinkedIn · 58,829 impressions · +2,906% growth (Mar 2026)</figcaption></figure>
+      <figure class="shot" onclick="lbOpen(this)"><img src="assets/img/viral-post-walton.png" alt="LinkedIn post by Chris Walton, 133 reactions, 23 reposts" loading="lazy"><figcaption>LinkedIn · Viral post · 133 reactions · 23 reposts</figcaption></figure>
+      <figure class="shot" onclick="lbOpen(this)"><img src="assets/img/wise-post.jpg" alt="LinkedIn post about Wise, 435 reactions, 25 reposts" loading="lazy"><figcaption>LinkedIn · 435 reactions · 25 reposts · Content distribution win</figcaption></figure>
+      <figure class="shot" onclick="lbOpen(this)"><img src="assets/img/yt-90d.jpg" alt="YouTube analytics 56,760 views in the last 90 days, 1.1K watch hours, 110 new subscribers" loading="lazy"><figcaption>YouTube · 56.8K views in 90 days (+48%) · 1.1K watch hours (+164%)</figcaption></figure>
+      <figure class="shot" onclick="lbOpen(this)"><img src="assets/img/li-impressions-aug.jpg" alt="LinkedIn highlights 172,214 impressions and 2,072 reactions in 30 days" loading="lazy"><figcaption>LinkedIn · 172,214 impressions in 30 days · +1,047.1% growth</figcaption></figure>
+      <figure class="shot" onclick="lbOpen(this)"><img src="assets/img/li-followers-30d.jpg" alt="LinkedIn follower highlights 980 new followers in the last 30 days, 450.6% growth" loading="lazy"><figcaption>LinkedIn · 980 new followers in 30 days · +450.6% growth</figcaption></figure>
+      <figure class="shot" onclick="lbOpen(this)"><img src="assets/img/li-followers-total.jpg" alt="LinkedIn follower highlights 7,539 total followers and 3,966 new followers in the last 365 days" loading="lazy"><figcaption>LinkedIn · 7,539 total followers · 3,966 gained in 12 months</figcaption></figure>
+      <figure class="shot" onclick="lbOpen(this)"><img src="assets/img/nubank-post.jpg" alt="LinkedIn post about Nubank founder David Vélez with 200 reactions and 6 reposts" loading="lazy"><figcaption>LinkedIn · Nubank founder story · 200+ reactions · 6 reposts</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<div class="lightbox" id="lb">
+  <button class="lb-x" onclick="lbClose()" aria-label="Close">&#10005;</button>
+  <img id="lbImg" src="" alt="">
+  <p id="lbCap"></p>
+</div>
+
+<section id="shorts">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div>
+        <span class="kicker">Vertical video</span>
+        <h2 class="h-lg" style="margin-top:.9rem">Short-form that <span class="it">travels</span></h2>
+        <p class="lede" style="margin-top:.8rem">3 to 5x more views with our strategic editing. This is where new listeners find the show.</p>
+      </div>
+      <div class="rail-nav">
+        <button class="rail-btn" onclick="railGo('shortRail',-1)" aria-label="Scroll left">&larr;</button>
+        <button class="rail-btn" onclick="railGo('shortRail',1)" aria-label="Scroll right">&rarr;</button>
+      </div>
+    </div>
+    <div class="rail rv" id="shortRail">
+      <div class="s-card">
+        <div class="s-embed">
+          <video data-src="assets/video/short-01.mp4" data-poster="assets/video/short-01.jpg"
+                 muted loop playsinline preload="none" aria-label="Short-form clip 01"></video>
+          <button class="s-play" onclick="playClip(this)" aria-label="Play clip 01">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+          </button>
+          <button class="s-mute" onclick="muteClip(event, this)" aria-label="Toggle sound" hidden>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="s-card">
+        <div class="s-embed">
+          <video data-src="assets/video/short-02.mp4" data-poster="assets/video/short-02.jpg"
+                 muted loop playsinline preload="none" aria-label="Short-form clip 02"></video>
+          <button class="s-play" onclick="playClip(this)" aria-label="Play clip 02">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+          </button>
+          <button class="s-mute" onclick="muteClip(event, this)" aria-label="Toggle sound" hidden>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="s-card">
+        <div class="s-embed">
+          <video data-src="assets/video/short-03.mp4" data-poster="assets/video/short-03.jpg"
+                 muted loop playsinline preload="none" aria-label="Short-form clip 03"></video>
+          <button class="s-play" onclick="playClip(this)" aria-label="Play clip 03">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+          </button>
+          <button class="s-mute" onclick="muteClip(event, this)" aria-label="Toggle sound" hidden>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="s-card">
+        <div class="s-embed">
+          <video data-src="assets/video/short-04.mp4" data-poster="assets/video/short-04.jpg"
+                 muted loop playsinline preload="none" aria-label="Short-form clip 04"></video>
+          <button class="s-play" onclick="playClip(this)" aria-label="Play clip 04">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+          </button>
+          <button class="s-mute" onclick="muteClip(event, this)" aria-label="Toggle sound" hidden>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="s-card">
+        <div class="s-embed">
+          <video data-src="assets/video/short-05.mp4" data-poster="assets/video/short-05.jpg"
+                 muted loop playsinline preload="none" aria-label="Short-form clip 05"></video>
+          <button class="s-play" onclick="playClip(this)" aria-label="Play clip 05">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+          </button>
+          <button class="s-mute" onclick="muteClip(event, this)" aria-label="Toggle sound" hidden>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="s-card">
+        <div class="s-embed">
+          <video data-src="assets/video/short-06.mp4" data-poster="assets/video/short-06.jpg"
+                 muted loop playsinline preload="none" aria-label="Short-form clip 06"></video>
+          <button class="s-play" onclick="playClip(this)" aria-label="Play clip 06">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+          </button>
+          <button class="s-mute" onclick="muteClip(event, this)" aria-label="Toggle sound" hidden>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="s-card">
+        <div class="s-embed">
+          <video data-src="assets/video/short-07.mp4" data-poster="assets/video/short-07.jpg"
+                 muted loop playsinline preload="none" aria-label="Short-form clip 07"></video>
+          <button class="s-play" onclick="playClip(this)" aria-label="Play clip 07">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+          </button>
+          <button class="s-mute" onclick="muteClip(event, this)" aria-label="Toggle sound" hidden>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="s-card">
+        <div class="s-embed">
+          <video data-src="assets/video/short-08.mp4" data-poster="assets/video/short-08.jpg"
+                 muted loop playsinline preload="none" aria-label="Short-form clip 08"></video>
+          <button class="s-play" onclick="playClip(this)" aria-label="Play clip 08">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+          </button>
+          <button class="s-mute" onclick="muteClip(event, this)" aria-label="Toggle sound" hidden>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="s-card">
+        <div class="s-embed">
+          <video data-src="assets/video/short-09.mp4" data-poster="assets/video/short-09.jpg"
+                 muted loop playsinline preload="none" aria-label="Short-form clip 09"></video>
+          <button class="s-play" onclick="playClip(this)" aria-label="Play clip 09">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+          </button>
+          <button class="s-mute" onclick="muteClip(event, this)" aria-label="Toggle sound" hidden>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="s-card">
+        <div class="s-embed">
+          <video data-src="assets/video/short-10.mp4" data-poster="assets/video/short-10.jpg"
+                 muted loop playsinline preload="none" aria-label="Short-form clip 10"></video>
+          <button class="s-play" onclick="playClip(this)" aria-label="Play clip 10">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+          </button>
+          <button class="s-mute" onclick="muteClip(event, this)" aria-label="Toggle sound" hidden>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="case-studies">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div>
+        <span class="kicker">Deep dives</span>
+        <h2 class="h-lg" style="margin-top:.9rem">Case <span class="it">studies</span></h2>
+      </div>
+      <a href="case-studies.html" class="btn btn-line">See all <span class="arr">&rarr;</span></a>
+    </div>
+    <div class="cs-grid">
+      <a class="cs rv " href="https://drive.google.com/file/d/1qikjI308O4z4vqUH1Q0PIUuduIZIkGrx/view?usp=sharing" target="_blank" rel="noopener">
+        <span class="cs-tag">Podcast Growth</span>
+        <h3 class="h-md">How we grew Work in Fintech <span class="it-plain">500%</span> and landed high-profile guests</h3>
+        <p>No guest pipeline, no distribution, poor packaging. We built a full end-to-end system that secured guests like the CEO of Revolut India and the Co-Founder of Blockchain.com.</p>
+        <div class="cs-nums"><div><b>+500%</b><small>YouTube Views</small></div><div><b>+1,197%</b><small>LinkedIn Impressions</small></div></div>
+        <span class="cs-link">Read the case study <span class="arr">&rarr;</span></span>
+      </a>
+      <a class="cs rv rv-1 " href="https://drive.google.com/file/d/1mSKXFG5DLpDxw5kGRabJ_NUvA4l0r7ex/view?usp=sharing" target="_blank" rel="noopener">
+        <span class="cs-tag">Editing &amp; Strategy</span>
+        <h3 class="h-md">How we increased Omni Talk average views by <span class="it-plain">300%+</span></h3>
+        <p>Omni Talk had great content but basic edits holding it back. Our strategic hook-first editing approach delivered a consistent uplift across the board.</p>
+        <div class="cs-nums"><div><b>11x</b><small>Peak Video Views</small></div><div><b>3-4x</b><small>Consistent Uplift</small></div></div>
+        <span class="cs-link">Read the case study <span class="arr">&rarr;</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="quote rv">
+  <blockquote>&ldquo;We don't book guests to fill slots. We book guests who make your show worth following.&rdquo;</blockquote>
+  <cite>Qurious Growth</cite>
+</section>
+
+<section id="faq" class="no-top">
+  <div class="wrap">
+    <div class="faq-cols">
+      <div class="faq-side rv">
+        <span class="kicker">Questions</span>
+        <h2 class="h-lg" style="margin-top:.9rem">Frequently <span class="it">asked</span></h2>
+        <p class="lede" style="margin-top:1rem">Everything you need to know about working with Qurious Growth. Can't find your answer? Book a call and we'll sort it out.</p>
+        <a href="contact.html" class="btn btn-line" style="margin-top:1.6rem">Book a Call <span class="arr">&rarr;</span></a>
+      </div>
+      <div class="rv rv-1">
+        <div class="fq">
+          <button class="fq-q" onclick="toggleFq(this)">Do I need to already have a podcast to work with you?<span class="fq-i">+</span></button>
+          <div class="fq-a"><p>No, you don't need an existing podcast. We work with complete beginners and established shows alike. Whether you're starting from zero or looking to scale what you already have, we'll guide you through every step, from concept and setup to your first published episode and beyond.</p></div>
+        </div>
+        <div class="fq">
+          <button class="fq-q" onclick="toggleFq(this)">What platforms do you distribute content to?<span class="fq-i">+</span></button>
+          <div class="fq-a"><p>Your podcast is published and distributed to YouTube, Spotify, and Apple Podcasts as a full episode. On top of that, we repurpose every episode into platform-native content, reels and short clips for Instagram and YouTube Shorts, carousels and posts for LinkedIn, threads for X (Twitter), and newsletter write-ups. Every piece of content is formatted the way each platform's audience actually consumes it.</p></div>
+        </div>
+        <div class="fq">
+          <button class="fq-q" onclick="toggleFq(this)">How do you ensure guest quality?<span class="fq-i">+</span></button>
+          <div class="fq-a"><p>Guest quality is one of our highest priorities. We build your guest list based on a deep understanding of your niche, your audience, and the kind of conversations that create genuine value. Every potential guest is vetted for credibility, relevance, and their ability to deliver insights your listeners can't find anywhere else. We don't book guests to fill slots, we book guests who make your show worth following.</p></div>
+        </div>
+        <div class="fq">
+          <button class="fq-q" onclick="toggleFq(this)">How long does it take to get the first episode out?<span class="fq-i">+</span></button>
+          <div class="fq-a"><p>Our onboarding process is built to move fast without cutting corners. We get to know your brand, your audience, your goals, and your voice in the first few days. From there, we handle everything, guest sourcing, recording logistics, editing, and distribution prep. Your first fully produced episode, complete with all distribution materials, is launched within one week of completing onboarding.</p></div>
+        </div>
+        <div class="fq">
+          <button class="fq-q" onclick="toggleFq(this)">What does the ghost writing process look like?<span class="fq-i">+</span></button>
+          <div class="fq-a"><p>We start by doing a deep analysis of your brand, your tone, your existing content, your opinions, and most importantly, your Ideal Listener Profile. From there, we build a content system designed specifically around you and your audience. Every post we write sounds unmistakably like you, serves your listeners, and strategically supports your podcast's growth. Over time, this content engine compounds, building your authority, attracting better guests, and driving more listeners to every episode.</p></div>
+        </div>
+        <div class="fq">
+          <button class="fq-q" onclick="toggleFq(this)">What's your pricing model?<span class="fq-i">+</span></button>
+          <div class="fq-a"><p>Our pricing reflects the depth of work we put in. Packages range from $2,000 to $6,000 per month depending on scope, episode frequency, and the level of distribution and content creation involved. Every engagement is tailored, book a call and we'll put together the right package for your goals.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="book">
+  <div class="wrap rv">
+    <span class="kicker">Let's talk</span>
+    <h2 class="h-xl" style="margin-top:1rem;font-size:clamp(2.6rem,7vw,5.4rem)">Work <span class="it">with</span> us</h2>
+    <p class="lede center" style="margin:1.4rem auto 0">Book a free strategy call. We'll map out exactly what your podcast needs, guests, growth, and everything in between.</p>
+    <ul class="book-list">
+      <li>30-minute, no commitment</li>
+      <li>We audit your current setup</li>
+      <li>You leave with a growth roadmap</li>
+    </ul>
+    <div class="cal-shell">
+      <div class="calendly-inline-widget" data-url="https://calendly.com/mayureshk1706/catch-up-call" style="min-width:320px;height:600px;"></div>
+    </div>
+  </div>
+</section>
+
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<footer>
+  <div class="f-grid">
+    <div class="f-brand">
+      <a href="index.html" class="brand"><svg viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <rect width="38" height="38" rx="10" fill="#0E0E11"/>
+      <rect x=".5" y=".5" width="37" height="37" rx="9.5" stroke="#1D1D23"/>
+      <text x="19" y="26" text-anchor="middle" font-family="Manrope, sans-serif" font-weight="700" font-size="19" fill="#F0EEE9">Q</text>
+      <circle cx="28.5" cy="28.5" r="3.2" fill="#C6A667"/>
+    </svg><span>Qurious Growth</span></a>
+      <p>Fintech podcast management and distribution.</p>
+    </div>
+    <div class="f-col">
+      <h4>Services</h4>
+      <a href="index.html#services">Guest Engine</a>
+      <a href="index.html#services">Production</a>
+      <a href="index.html#services">Distribution</a>
+    </div>
+    <div class="f-col">
+      <h4>Work</h4>
+      <a href="index.html#results">Results</a>
+      <a href="index.html#shorts">Short-Form</a>
+      <a href="case-studies.html">Case Studies</a>
+    </div>
+    <div class="f-col">
+      <h4>Company</h4>
+      <a href="index.html#faq">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+  <div class="f-bottom">
+    <span>&copy; 2026 Qurious Growth. All rights reserved.</span>
+    <span>Silvassa, India &middot; Working worldwide</span>
+  </div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
