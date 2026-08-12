@@ -51,7 +51,7 @@ section{padding:clamp(4.5rem,9vw,8.5rem) var(--pad)}
 .no-top{padding-top:0}
 
 /* --------------------------------------------------------- type ---------- */
-.h-xl{font-weight:700;letter-spacing:-.042em;line-height:1.01;font-size:clamp(2.9rem,8.6vw,7rem)}
+.h-xl{font-weight:700;letter-spacing:-.042em;line-height:1.12;font-size:clamp(2.9rem,8.6vw,7rem)}
 .h-lg{font-weight:700;letter-spacing:-.034em;line-height:1.06;font-size:clamp(2rem,4.6vw,3.5rem)}
 .h-md{font-weight:700;letter-spacing:-.028em;line-height:1.12;font-size:clamp(1.6rem,3.2vw,2.5rem)}
 .it{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:-.005em;color:var(--brass)}
@@ -119,8 +119,13 @@ section{padding:clamp(4.5rem,9vw,8.5rem) var(--pad)}
     radial-gradient(ellipse 70% 50% at 50% 100%,rgba(19,42,99,.22),transparent 70%);
 }
 .hero .wrap{position:relative}
-.hero h1 .line{display:block;overflow:hidden}
-.hero h1 .line>span{display:block;transform:translateY(114%);animation:rise 1.05s var(--ease) forwards}
+.hero h1 .line{
+  display:block;overflow:hidden;
+  /* padding widens the clipping box so descenders and the italic serif tail
+     are not sheared off; the matching negative margin keeps the layout tight */
+  padding:.10em .08em .30em;margin:-.10em -.08em -.30em;
+}
+.hero h1 .line>span{display:block;transform:translateY(135%);animation:rise 1.05s var(--ease) forwards}
 .hero h1 .line:nth-child(2)>span{animation-delay:.11s}
 @keyframes rise{to{transform:translateY(0)}}
 .hero-sub{
