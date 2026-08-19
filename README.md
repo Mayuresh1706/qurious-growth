@@ -11,6 +11,8 @@ Static site. No build step, no dependencies, no framework. Push it and it's live
 │                         quote, FAQ, booking
 ├── case-studies.html     Case studies + full screenshot proof wall
 ├── contact.html          Calendly booking page
+├── blog/                 Blog index + one page per post
+├── content/              Markdown source for each post
 ├── robots.txt
 ├── sitemap.xml
 └── assets/
@@ -65,6 +67,26 @@ plain markup with no templating, so search for the text and change it.
   </div>
 </div>
 ```
+
+## Adding a blog post
+
+Posts are plain HTML, so you can add one without any tooling:
+
+1. Copy `blog/why-every-serious-podcast-needs-a-clipping-network.html` to a new
+   file named after the post, using hyphens and no spaces.
+2. Change the `<title>`, the meta description, the `.post-meta` line (tag, date,
+   read time), the `<h1>`, the `.post-dek`, and the hero image.
+3. Replace everything inside `<div class="prose">` with your paragraphs. Use
+   `<p>` for text, `<h2>` for sections, `<h3>` for subsections, `<blockquote>`
+   for pull quotes and `<hr>` for a divider. Leave the `.post-cta` block alone.
+4. Add a `.post-card` block to `blog/index.html`, copying the existing one.
+5. Add the new URL to `sitemap.xml`.
+
+Hero images go in `assets/img/blog/`. Resize to about 1600px wide and save as
+JPEG at quality 85 before adding, so the page stays fast.
+
+The markdown source of each post is kept in `content/` for reference. It is not
+used at runtime; the HTML is what gets served.
 
 ## Two things to fix when you can
 
