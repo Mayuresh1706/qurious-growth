@@ -125,6 +125,10 @@ The objective is to give people a reason to care about the conversation.
 
 For Work in Fintech, we've used promotional posts to introduce guests and highlight interesting ideas from upcoming conversations.
 
+[[fig wif-trailer-future-banks.jpg | A promotional post built around an idea from the upcoming conversation: 62 reactions, 7 comments, 3 reposts]]
+
+[[fig wif-trailer-iphone.jpg | Another promotional cut, opening on a moment rather than an announcement: 50 reactions, 3 comments, 2 reposts]]
+
 This gives the episode an initial distribution push rather than treating publication as the finish line.
 
 ---
@@ -229,6 +233,8 @@ For Work in Fintech, we've written posts around:
 - Technology trends
 - Banking and payments
 - AI in financial services
+
+[[fig wif-ghostwriting-starling.jpg!narrow | A ghostwritten Work in Fintech post on Starling Bank: around 80,000 impressions, 715 reactions, 20 comments, 10 reposts]]
 
 This gives people a reason to follow the page even when they haven't watched the podcast.
 
@@ -336,6 +342,8 @@ A single episode can become:
 - Industry analysis
 - Recommended resources
 - Episode links
+
+[[fig wif-newsletter-playbook.jpg | The Work in Fintech Playbook: a biweekly newsletter built on top of the podcast, now at 2,282 subscribers]]
 
 This creates another loop:
 
