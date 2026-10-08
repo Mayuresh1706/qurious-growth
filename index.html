@@ -58,18 +58,30 @@
   <a href="contact.html" class="m-cta" onclick="closeMenu()">Book a Call &rarr;</a>
 </div>
 
-<section class="hero">
+<section class="hero hero-film">
   <div class="wrap">
     <h1 class="h-xl">
       <span class="line"><span>The Podcast</span></span>
       <span class="line"><span><span class="it">Growth</span> Engine</span></span>
     </h1>
     <p class="hero-sub">The content arm for fintech, retail, VC and capital markets brands. Guest booking, research, production and distribution, handled end to end.</p>
-    <div class="hero-cta">
+    <div class="promo-frame rv" id="work">
+      <video id="promoFilm" src="assets/video/promo-distribution.mp4" poster="assets/video/promo-distribution.jpg"
+             playsinline preload="metadata" aria-label="Podcast distribution explained"></video>
+      <button class="reel-play" id="promoBtn" onclick="playPromo(this)" aria-label="Play the film">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+        <span>Watch the film &middot; 4 min</span>
+      </button>
+      <div class="promo-spin" id="promoSpin" hidden><i></i><span>Loading</span></div>
+    </div>
+    <div class="film-cap rv" style="max-width:none">
+      <span>Podcast distribution, explained</span>
+      <a href="contact.html">Book a call &rarr;</a>
+    </div>
+    <div class="hero-cta" style="animation:none;opacity:1;margin-top:2.2rem">
       <a href="contact.html" class="btn btn-solid">Book a Call <span class="arr">&rarr;</span></a>
       <a href="#services" class="btn btn-line">What we do</a>
     </div>
-    <div class="hero-rule"></div>
   </div>
 </section>
 
@@ -80,23 +92,6 @@
     <span class="mq-word">Work in Fintech <i>&#9670;</i> Capital Markets FinTech Forum <i>&#9670;</i> YouTube <i>&#9670;</i> Spotify <i>&#9670;</i> Apple Podcasts <i>&#9670;</i> LinkedIn <i>&#9670;</i> Instagram <i>&#9670;</i> X <i>&#9670;</i></span>
   </div></div>
 </div>
-
-<section class="no-top" id="work">
-  <div class="wrap rv">
-    <div class="reel-frame">
-      <video id="promoFilm" src="assets/video/promo-distribution.mp4" poster="assets/video/promo-distribution.jpg"
-             playsinline preload="none" aria-label="Podcast distribution explained"></video>
-      <button class="reel-play" onclick="playPromo(this)" aria-label="Play the film">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
-        <span>Watch the film &middot; 4 min</span>
-      </button>
-    </div>
-    <div class="film-cap" style="max-width:none">
-      <span>Podcast distribution, explained</span>
-      <a href="contact.html">Book a call &rarr;</a>
-    </div>
-  </div>
-</section>
 
 <div class="stats">
   <div class="stats-grid wrap">
@@ -119,19 +114,14 @@
     </div>
 
     <article class="cstudy rv">
-      <div>
-        <span class="cstudy-tag">Work in Fintech</span>
+      <div class="cstudy-body">
+        <span class="cstudy-tag"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.2 6.6.9-4.8 4.6 1.2 6.6L12 17.2 6.1 20.3l1.2-6.6L2.5 9.1l6.6-.9z"/></svg>Work in Fintech case study</span>
         <h3 class="h-md">From no pipeline to <span class="it">1M+</span> impressions a year</h3>
         <p>No guest pipeline, no distribution, poor packaging. We built the full system: outreach, research, production and platform-native distribution. It now books CEOs from Revolut India, Blockchain.com and ClearBank.</p>
-        <dl class="cstudy-stats">
-          <div><dt>Impressions</dt><dd>1M<span>+</span></dd></div>
-          <div><dt>Reactions</dt><dd>9,031</dd></div>
-          <div><dt>New followers</dt><dd>3,966</dd></div>
-          <div><dt>Timeframe</dt><dd>12 months</dd></div>
-        </dl>
-        <a href="https://drive.google.com/file/d/1qikjI308O4z4vqUH1Q0PIUuduIZIkGrx/view?usp=sharing" target="_blank" rel="noopener" class="btn btn-line">Read the case study <span class="arr">&rarr;</span></a>
+        <a href="https://drive.google.com/file/d/1qikjI308O4z4vqUH1Q0PIUuduIZIkGrx/view?usp=sharing" target="_blank" rel="noopener" class="btn btn-line">View case study <span class="arr">&rarr;</span></a>
+        <dl class="cstudy-stats"><div><dt>Total impressions</dt><dd>1M+</dd></div><div><dt>Reactions</dt><dd>9,031</dd></div><div><dt>New followers</dt><dd>7,000</dd></div><div><dt>Timeframe</dt><dd>12 months</dd></div></dl>
       </div>
-      <div class="film-wrap">
+      <div class="film-panel">
         <div class="film">
           <video data-src="assets/video/case-wif.mp4" poster="assets/video/case-wif.jpg"
                  muted loop playsinline preload="none" onclick="toggleSound(this)" aria-label="Work in Fintech case study film"></video>
@@ -142,25 +132,20 @@
         </div>
         <div class="film-cap">
           <span>Case study film</span>
-          <a href="case-studies.html">Full breakdown &rarr;</a>
+          <a href="https://drive.google.com/file/d/1qikjI308O4z4vqUH1Q0PIUuduIZIkGrx/view?usp=sharing" target="_blank" rel="noopener">View case study &rarr;</a>
         </div>
       </div>
     </article>
 
     <article class="cstudy rv">
-      <div>
-        <span class="cstudy-tag">Omni Talk Retail</span>
+      <div class="cstudy-body">
+        <span class="cstudy-tag"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.2 6.6.9-4.8 4.6 1.2 6.6L12 17.2 6.1 20.3l1.2-6.6L2.5 9.1l6.6-.9z"/></svg>Omni Talk Retail case study</span>
         <h3 class="h-md">Hook-first editing, <span class="it">300%+</span> more average views</h3>
         <p>Omni Talk had great content held back by basic edits. We rebuilt the edit around hooks, pacing and packaging, then cut every episode into platform-native short-form that travels well beyond the show's own audience.</p>
-        <dl class="cstudy-stats">
-          <div><dt>Average views</dt><dd>+300<span>%</span></dd></div>
-          <div><dt>Peak video</dt><dd>11<span>x</span></dd></div>
-          <div><dt>Consistent uplift</dt><dd>3-5<span>x</span></dd></div>
-          <div><dt>Timeframe</dt><dd>Ongoing</dd></div>
-        </dl>
-        <a href="https://drive.google.com/file/d/1mSKXFG5DLpDxw5kGRabJ_NUvA4l0r7ex/view?usp=sharing" target="_blank" rel="noopener" class="btn btn-line">Read the case study <span class="arr">&rarr;</span></a>
+        <a href="https://drive.google.com/file/d/1mSKXFG5DLpDxw5kGRabJ_NUvA4l0r7ex/view?usp=sharing" target="_blank" rel="noopener" class="btn btn-line">View case study <span class="arr">&rarr;</span></a>
+        <dl class="cstudy-stats"><div><dt>Average views</dt><dd>+300%</dd></div><div><dt>Peak video</dt><dd>11x</dd></div><div><dt>Consistent uplift</dt><dd>3-5x</dd></div><div><dt>Timeframe</dt><dd>Ongoing</dd></div></dl>
       </div>
-      <div class="film-wrap">
+      <div class="film-panel">
         <div class="film">
           <video data-src="assets/video/case-omnitalk.mp4" poster="assets/video/case-omnitalk.jpg"
                  muted loop playsinline preload="none" onclick="toggleSound(this)" aria-label="Omni Talk Retail case study film"></video>
@@ -171,7 +156,7 @@
         </div>
         <div class="film-cap">
           <span>Case study film</span>
-          <a href="case-studies.html">Full breakdown &rarr;</a>
+          <a href="https://drive.google.com/file/d/1mSKXFG5DLpDxw5kGRabJ_NUvA4l0r7ex/view?usp=sharing" target="_blank" rel="noopener">View case study &rarr;</a>
         </div>
       </div>
     </article>

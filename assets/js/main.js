@@ -234,16 +234,52 @@
   document.querySelectorAll('.film video').forEach(function (v) { fio.observe(v); });
 
   /* ------------------------------------------------ hero promo film ----- */
-  window.playPromo = function (btn) {
-    var v = document.getElementById('promoFilm');
-    document.querySelectorAll('.film video').forEach(function (o) {
-      o.muted = true; setBtn(o.closest('.film'), true);
+  var promo = document.getElementById('promoFilm');
+  if (promo) {
+    var pBtn = document.getElementById('promoBtn');
+    var pSpin = document.getElementById('promoSpin');
+
+    var spin = function (on) { if (pSpin) pSpin.hidden = !on; };
+
+    /* The film is several megabytes, so there is a gap between the click and
+       the first frame. Show that gap instead of leaving a dead-looking frame. */
+    promo.addEventListener('waiting', function () { if (!promo.paused) spin(true); });
+    promo.addEventListener('stalled', function () { if (!promo.paused) spin(true); });
+    promo.addEventListener('playing', function () { spin(false); pBtn.hidden = true; });
+    promo.addEventListener('canplay', function () { spin(false); });
+    promo.addEventListener('pause', function () { spin(false); });
+    promo.addEventListener('error', function () {
+      spin(false);
+      pBtn.hidden = false;
+      pBtn.querySelector('span').textContent = 'Could not load, tap to retry';
     });
-    v.muted = false;
-    v.controls = true;
-    v.play();
-    btn.hidden = true;
-  };
+
+    window.playPromo = function (btn) {
+      /* nothing else should be audible over it */
+      document.querySelectorAll('.film video').forEach(function (o) {
+        o.muted = true;
+        setBtn(o.closest('.film'), true);
+      });
+      promo.muted = false;
+      promo.controls = true;
+      spin(true);
+      var pr = promo.play();
+      if (pr && pr.catch) {
+        pr.catch(function () {
+          /* a browser that refuses unmuted playback still gets to play */
+          promo.muted = true;
+          promo.play().then(function () {
+            btn.hidden = true;
+          }).catch(function () {
+            spin(false);
+            btn.hidden = false;
+          });
+        });
+      }
+    };
+  } else {
+    window.playPromo = function () {};
+  }
 
   /* ------------------------------------- logo fallback: clearbit → icon -- */
   window.logoFallback = function (img) {
