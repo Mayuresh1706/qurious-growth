@@ -277,6 +277,81 @@ section{padding:clamp(4.5rem,9vw,8.5rem) var(--pad)}
 }
 .rail-btn:hover{background:var(--porcelain);color:var(--ink);transform:scale(1.06)}
 
+/* ------------------------------------------------ case study films ------- */
+.cstudy{
+  display:grid;grid-template-columns:1fr 1.08fr;gap:clamp(1.8rem,4vw,3.4rem);align-items:center;
+  padding:clamp(2.2rem,4.5vw,3.4rem) 0;border-top:1px solid var(--line);
+}
+.cstudy:last-of-type{border-bottom:1px solid var(--line)}
+.cstudy-tag{
+  font-family:var(--mono);font-size:.62rem;letter-spacing:.22em;color:var(--accent);
+  text-transform:uppercase;display:inline-flex;align-items:center;gap:.6rem;
+}
+.cstudy-tag::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--accent)}
+.cstudy h3{margin:1rem 0 .9rem;max-width:20ch}
+.cstudy > div > p{color:var(--mut);font-size:.95rem;max-width:48ch}
+.cstudy-stats{
+  display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);
+  border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-top:1.8rem;
+}
+.cstudy-stats div{background:var(--ink-2);padding:1rem 1.2rem}
+.cstudy-stats dt{font-family:var(--mono);font-size:.58rem;letter-spacing:.18em;text-transform:uppercase;color:var(--mut-2)}
+.cstudy-stats dd{font-weight:700;letter-spacing:-.03em;font-size:clamp(1.3rem,2.4vw,1.75rem);margin-top:.35rem;font-variant-numeric:tabular-nums}
+.cstudy-stats dd span{color:var(--accent)}
+.cstudy .btn{margin-top:1.8rem}
+
+.film{
+  position:relative;aspect-ratio:16/9;border-radius:18px;overflow:hidden;
+  border:1px solid var(--line);background:var(--ink-2);
+  box-shadow:0 30px 90px rgba(0,0,0,.55);
+}
+.film video{width:100%;height:100%;object-fit:cover;display:block;cursor:pointer}
+.film-sound{
+  position:absolute;right:.9rem;bottom:.9rem;z-index:3;
+  display:inline-flex;align-items:center;gap:.5rem;cursor:pointer;
+  font-family:var(--mono);font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--ink);background:var(--porcelain);border:none;
+  padding:.55rem .9rem;border-radius:100px;transition:background .25s,transform .25s,opacity .25s;
+}
+.film-sound:hover{transform:scale(1.05);background:var(--accent)}
+.film-sound svg{width:13px;height:13px;fill:currentColor;flex:0 0 auto}
+.film-sound.on{
+  background:rgba(8,8,10,.62);color:var(--porcelain);
+  backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);opacity:.75;
+}
+.film-sound.on:hover{opacity:1;background:rgba(8,8,10,.8)}
+.film-cap{
+  display:flex;justify-content:space-between;gap:1rem;margin-top:.9rem;
+  font-family:var(--mono);font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;color:var(--mut-2);
+}
+.film-cap a{color:var(--mut);transition:color .25s}
+.film-cap a:hover{color:var(--accent)}
+
+/* hero promo film */
+.reel-frame{position:relative}
+.reel-frame video{width:100%;height:100%;object-fit:cover;display:block}
+.reel-play{
+  position:absolute;inset:0;width:100%;height:100%;z-index:3;border:none;cursor:pointer;
+  background:linear-gradient(180deg,rgba(8,8,10,.15),rgba(8,8,10,.55));
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;
+  transition:background .3s;
+}
+.reel-play:hover{background:linear-gradient(180deg,rgba(8,8,10,.05),rgba(8,8,10,.45))}
+.reel-play svg{
+  width:26px;height:26px;fill:var(--ink);background:var(--porcelain);border-radius:50%;
+  padding:16px;box-sizing:content-box;transition:background .25s,transform .3s;
+}
+.reel-play:hover svg{background:var(--accent);transform:scale(1.07)}
+.reel-play span{
+  font-family:var(--mono);font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--porcelain);
+}
+.reel-play[hidden]{display:none}
+
+@media(max-width:900px){
+  .cstudy{grid-template-columns:1fr;gap:1.6rem}
+  .cstudy .film-wrap{order:-1}
+}
+
 /* --------------------------------------------------- case studies -------- */
 .cs-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}
 .cs{

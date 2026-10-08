@@ -84,8 +84,97 @@
 <section class="no-top" id="work">
   <div class="wrap rv">
     <div class="reel-frame">
-      <iframe src="https://www.youtube-nocookie.com/embed/c5edPuWVTxc?rel=0&amp;modestbranding=1&amp;playsinline=1" title="Qurious Growth showreel" allowfullscreen loading="lazy"></iframe>
+      <video id="promoFilm" src="assets/video/promo-distribution.mp4" poster="assets/video/promo-distribution.jpg"
+             playsinline preload="none" aria-label="Podcast distribution explained"></video>
+      <button class="reel-play" onclick="playPromo(this)" aria-label="Play the film">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+        <span>Watch the film &middot; 4 min</span>
+      </button>
     </div>
+    <div class="film-cap" style="max-width:none">
+      <span>Podcast distribution, explained</span>
+      <a href="contact.html">Book a call &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<div class="stats">
+  <div class="stats-grid wrap">
+    <div class="stat"><b><span data-count="2">0</span>M+</b><small>Impressions Generated</small></div>
+    <div class="stat"><b><span data-count="500">0</span>K+</b><small>YouTube Views</small></div>
+    <div class="stat"><b><span data-count="50">0</span>+</b><small>Episodes Produced</small></div>
+    <div class="stat"><b><span data-count="30">0</span>+</b><small>High-Profile Guests</small></div>
+  </div>
+</div>
+
+<section id="case-studies">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div>
+        <span class="kicker">Deep dives</span>
+        <h2 class="h-lg" style="margin-top:.9rem">Case <span class="it">studies</span></h2>
+        <p class="lede" style="margin-top:.8rem">Two shows, rebuilt end to end. The numbers below come straight from their dashboards.</p>
+      </div>
+      <a href="case-studies.html" class="btn btn-line">See all <span class="arr">&rarr;</span></a>
+    </div>
+
+    <article class="cstudy rv">
+      <div>
+        <span class="cstudy-tag">Work in Fintech</span>
+        <h3 class="h-md">From no pipeline to <span class="it">1M+</span> impressions a year</h3>
+        <p>No guest pipeline, no distribution, poor packaging. We built the full system: outreach, research, production and platform-native distribution. It now books CEOs from Revolut India, Blockchain.com and ClearBank.</p>
+        <dl class="cstudy-stats">
+          <div><dt>Impressions</dt><dd>1M<span>+</span></dd></div>
+          <div><dt>Reactions</dt><dd>9,031</dd></div>
+          <div><dt>New followers</dt><dd>3,966</dd></div>
+          <div><dt>Timeframe</dt><dd>12 months</dd></div>
+        </dl>
+        <a href="https://drive.google.com/file/d/1qikjI308O4z4vqUH1Q0PIUuduIZIkGrx/view?usp=sharing" target="_blank" rel="noopener" class="btn btn-line">Read the case study <span class="arr">&rarr;</span></a>
+      </div>
+      <div class="film-wrap">
+        <div class="film">
+          <video data-src="assets/video/case-wif.mp4" poster="assets/video/case-wif.jpg"
+                 muted loop playsinline preload="none" onclick="toggleSound(this)" aria-label="Work in Fintech case study film"></video>
+          <button class="film-sound" onclick="soundBtn(event,this)" aria-label="Turn sound on">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/></svg>
+            <span>Sound on</span>
+          </button>
+        </div>
+        <div class="film-cap">
+          <span>Case study film</span>
+          <a href="case-studies.html">Full breakdown &rarr;</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="cstudy rv">
+      <div>
+        <span class="cstudy-tag">Omni Talk Retail</span>
+        <h3 class="h-md">Hook-first editing, <span class="it">300%+</span> more average views</h3>
+        <p>Omni Talk had great content held back by basic edits. We rebuilt the edit around hooks, pacing and packaging, then cut every episode into platform-native short-form that travels well beyond the show's own audience.</p>
+        <dl class="cstudy-stats">
+          <div><dt>Average views</dt><dd>+300<span>%</span></dd></div>
+          <div><dt>Peak video</dt><dd>11<span>x</span></dd></div>
+          <div><dt>Consistent uplift</dt><dd>3-5<span>x</span></dd></div>
+          <div><dt>Timeframe</dt><dd>Ongoing</dd></div>
+        </dl>
+        <a href="https://drive.google.com/file/d/1mSKXFG5DLpDxw5kGRabJ_NUvA4l0r7ex/view?usp=sharing" target="_blank" rel="noopener" class="btn btn-line">Read the case study <span class="arr">&rarr;</span></a>
+      </div>
+      <div class="film-wrap">
+        <div class="film">
+          <video data-src="assets/video/case-omnitalk.mp4" poster="assets/video/case-omnitalk.jpg"
+                 muted loop playsinline preload="none" onclick="toggleSound(this)" aria-label="Omni Talk Retail case study film"></video>
+          <button class="film-sound" onclick="soundBtn(event,this)" aria-label="Turn sound on">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/></svg>
+            <span>Sound on</span>
+          </button>
+        </div>
+        <div class="film-cap">
+          <span>Case study film</span>
+          <a href="case-studies.html">Full breakdown &rarr;</a>
+        </div>
+      </div>
+    </article>
   </div>
 </section>
 
@@ -137,14 +226,6 @@
   </div>
 </section>
 
-<div class="stats">
-  <div class="stats-grid wrap">
-    <div class="stat"><b><span data-count="600">0</span>K+</b><small>Impressions Generated</small></div>
-    <div class="stat"><b><span data-count="110">0</span>K+</b><small>YouTube Views</small></div>
-    <div class="stat"><b><span data-count="50">0</span>+</b><small>Episodes Produced</small></div>
-    <div class="stat"><b><span data-count="30">0</span>+</b><small>High-Profile Guests</small></div>
-  </div>
-</div>
 
 <section id="results">
   <div class="wrap">
@@ -157,6 +238,8 @@
       <a href="contact.html" class="btn btn-solid">Get these results <span class="arr">&rarr;</span></a>
     </div>
     <div class="shots rv">
+      <figure class="shot" onclick="lbOpen(this)"><img src="assets/img/li-impressions-1m.jpg" alt="LinkedIn analytics showing 1,015,192 impressions over 12 months, 9,031 reactions, all organic" loading="lazy"><figcaption>LinkedIn &middot; 1,015,192 impressions in 12 months &middot; 9,031 reactions</figcaption></figure>
+      <figure class="shot" onclick="lbOpen(this)"><img src="assets/img/li-stripe-post.jpg" alt="Post analytics for a single Work in Fintech post about Stripe: 114,568 impressions and 84,963 members reached" loading="lazy"><figcaption>LinkedIn &middot; One post &middot; 114,568 impressions &middot; 84,963 members reached</figcaption></figure>
       <figure class="shot" onclick="lbOpen(this)"><img src="assets/img/starling-post.jpg" alt="LinkedIn post about Starling Bank founder Anne Boden with 700 reactions and 20 comments" loading="lazy"><figcaption>LinkedIn · Starling founder story · 700 reactions · 10 reposts</figcaption></figure>
       <figure class="shot" onclick="lbOpen(this)"><img src="assets/img/yt-28d.png" alt="YouTube channel 13,832 views in 28 days, 7.8K more than usual" loading="lazy"><figcaption>YouTube · 13.8K views in 28 days (+203% vs prev period)</figcaption></figure>
       <figure class="shot" onclick="lbOpen(this)"><img src="assets/img/li-impressions-mar.png" alt="LinkedIn impressions 58,829, 2,906% growth" loading="lazy"><figcaption>LinkedIn · 58,829 impressions · +2,906% growth (Mar 2026)</figcaption></figure>
@@ -315,33 +398,6 @@
   </div>
 </section>
 
-<section id="case-studies">
-  <div class="wrap">
-    <div class="sec-head rv">
-      <div>
-        <span class="kicker">Deep dives</span>
-        <h2 class="h-lg" style="margin-top:.9rem">Case <span class="it">studies</span></h2>
-      </div>
-      <a href="case-studies.html" class="btn btn-line">See all <span class="arr">&rarr;</span></a>
-    </div>
-    <div class="cs-grid">
-      <a class="cs rv " href="https://drive.google.com/file/d/1qikjI308O4z4vqUH1Q0PIUuduIZIkGrx/view?usp=sharing" target="_blank" rel="noopener">
-        <span class="cs-tag">Podcast Growth</span>
-        <h3 class="h-md">How we grew Work in Fintech <span class="it-plain">500%</span> and landed high-profile guests</h3>
-        <p>No guest pipeline, no distribution, poor packaging. We built a full end-to-end system that secured guests like the CEO of Revolut India and the Co-Founder of Blockchain.com.</p>
-        <div class="cs-nums"><div><b>+500%</b><small>YouTube Views</small></div><div><b>+1,197%</b><small>LinkedIn Impressions</small></div></div>
-        <span class="cs-link">Read the case study <span class="arr">&rarr;</span></span>
-      </a>
-      <a class="cs rv rv-1 " href="https://drive.google.com/file/d/1mSKXFG5DLpDxw5kGRabJ_NUvA4l0r7ex/view?usp=sharing" target="_blank" rel="noopener">
-        <span class="cs-tag">Editing &amp; Strategy</span>
-        <h3 class="h-md">How we increased Omni Talk average views by <span class="it-plain">300%+</span></h3>
-        <p>Omni Talk had great content but basic edits holding it back. Our strategic hook-first editing approach delivered a consistent uplift across the board.</p>
-        <div class="cs-nums"><div><b>11x</b><small>Peak Video Views</small></div><div><b>3-4x</b><small>Consistent Uplift</small></div></div>
-        <span class="cs-link">Read the case study <span class="arr">&rarr;</span></span>
-      </a>
-    </div>
-  </div>
-</section>
 
 <section id="blog">
   <div class="wrap">
@@ -354,12 +410,12 @@
       <a href="blog/index.html" class="btn btn-line">All posts <span class="arr">&rarr;</span></a>
     </div>
     <div class="writing-grid">
-      <a class="post-card rv" href="blog/why-every-serious-podcast-needs-a-clipping-network.html">
-        <div class="post-card-img"><img src="assets/img/blog/clipping-network.jpg" alt="One podcast episode split into short clips and distributed across LinkedIn, X, YouTube, Instagram and TikTok to multiple accounts" loading="lazy"></div>
+      <a class="post-card rv" href="blog/podcast-growth-checklist.html">
+        <div class="post-card-img"><img src="assets/img/blog/qg-thumb-perplexity.jpg" alt="A podcast thumbnail: The Future of Online Search and AI, with Johnny Ho, Co-Founder of Perplexity AI" loading="lazy"></div>
         <div class="post-card-body">
-          <div class="post-meta" style="justify-content:flex-start"><span>Distribution</span><span>9 min read</span></div>
-          <h2>Why every serious podcast needs a clipping network</h2>
-          <p>A podcast is not a content channel. It is a media asset, a sales channel and a distribution system, and most companies waste all three by publishing to one account and hoping.</p>
+          <div class="post-meta" style="justify-content:flex-start"><span>Playbook</span><span>7 min read</span></div>
+          <h2>The podcast growth checklist</h2>
+          <p>Most podcasts don't lose to better shows. They lose to better packaging. This is the checklist we run on every episode, from thumbnail to distribution.</p>
           <span class="cs-link">Read the piece <span class="arr">&rarr;</span></span>
         </div>
       </a>

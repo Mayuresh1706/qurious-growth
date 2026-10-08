@@ -182,6 +182,69 @@
     });
   });
 
+  /* ------------------------------------------- case study films --------- */
+  function filmSrc(v) { if (v.dataset.src) { v.src = v.dataset.src; delete v.dataset.src; } }
+
+  function setBtn(film, muted) {
+    var btn = film.querySelector('.film-sound');
+    if (!btn) return;
+    btn.classList.toggle('on', !muted);
+    btn.querySelector('span').textContent = muted ? 'Sound on' : 'Sound off';
+    btn.setAttribute('aria-label', muted ? 'Turn sound on' : 'Turn sound off');
+  }
+
+  window.toggleSound = function (video) {
+    var film = video.closest('.film');
+    if (video.muted) {
+      /* only one film audible at a time */
+      document.querySelectorAll('.film video').forEach(function (o) {
+        if (o !== video) { o.muted = true; setBtn(o.closest('.film'), true); }
+      });
+      var promo = document.getElementById('promoFilm');
+      if (promo) promo.pause();
+      video.muted = false;
+      filmSrc(video);
+      video.play();
+    } else {
+      video.muted = true;
+    }
+    setBtn(film, video.muted);
+  };
+
+  window.soundBtn = function (e, btn) {
+    e.stopPropagation();
+    window.toggleSound(btn.closest('.film').querySelector('video'));
+  };
+
+  /* Autoplay muted while on screen, pause when it scrolls away. Browsers
+     block autoplay with sound, so the sound button is the user gesture. */
+  var fio = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      var v = e.target;
+      if (e.isIntersecting) {
+        filmSrc(v);
+        var pr = v.play();
+        if (pr && pr.catch) pr.catch(function () {});
+      } else {
+        v.pause();
+        if (!v.muted) { v.muted = true; setBtn(v.closest('.film'), true); }
+      }
+    });
+  }, { threshold: 0.45 });
+  document.querySelectorAll('.film video').forEach(function (v) { fio.observe(v); });
+
+  /* ------------------------------------------------ hero promo film ----- */
+  window.playPromo = function (btn) {
+    var v = document.getElementById('promoFilm');
+    document.querySelectorAll('.film video').forEach(function (o) {
+      o.muted = true; setBtn(o.closest('.film'), true);
+    });
+    v.muted = false;
+    v.controls = true;
+    v.play();
+    btn.hidden = true;
+  };
+
   /* ------------------------------------- logo fallback: clearbit → icon -- */
   window.logoFallback = function (img) {
     if (!img.dataset.tried) {
